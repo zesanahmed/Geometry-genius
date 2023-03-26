@@ -31,17 +31,19 @@
                         <img src="images/triangle.png" alt="Shoes" class="w" />
                     </figure>
                     <div class="card-body items-center text-center">
-                        <h2 class="card-title">Triangle</h2>
+                        <h2 class="card-title" id="name1">Triangle</h2>
                         <p class="text-lg">Area (A) = 0.5 &#xd7; b &#xd7; h</p>
 
                         <div class="flex gap-2 mx-2">
-                            <input type="text" placeholder="b" class="input bg-slate-200  w-full input-sm max-w-xs" />cm
-                            <input type="text" placeholder="h" class="input bg-slate-200  w-full input-sm max-w-xs" />cm
+                            <input type="text" placeholder="b" class="input bg-slate-200  w-full input-sm max-w-xs"
+                                id="base-field" />cm
+                            <input type="text" placeholder="h" class="input bg-slate-200  w-full input-sm max-w-xs"
+                                id="height-field" />cm
                         </div>
 
                         <div class="card-actions mt-8">
-                            <button
-                                class="bg-blue-500 hover:bg-blue-600 text-white font-medium px-20 py-2 rounded-lg">Calculate</button>
+                            <button class="bg-blue-500 hover:bg-blue-600 text-white font-medium px-20 py-2 rounded-lg"
+                                id="btn-triangle">Calculate</button>
                         </div>
                     </div>
                 </div>
@@ -50,17 +52,19 @@
                         <img src="images/rectangle.png" alt="Shoes" class="w-full" />
                     </figure>
                     <div class="card-body items-center text-center">
-                        <h2 class="card-title">Rectangle</h2>
+                        <h2 class="card-title" id="name2">Rectangle</h2>
                         <p class="text-lg">Area (A) = w &#xd7; l</p>
 
                         <div class="flex gap-2 mx-2">
-                            <input type="text" placeholder="w" class="input bg-slate-200  w-full input-sm max-w-xs" />cm
-                            <input type="text" placeholder="l" class="input bg-slate-200  w-full input-sm max-w-xs" />cm
+                            <input type="text" placeholder="w" class="input bg-slate-200  w-full input-sm max-w-xs"
+                                id="width-field" />cm
+                            <input type="text" placeholder="l" class="input bg-slate-200  w-full input-sm max-w-xs"
+                                id="length-field" />cm
                         </div>
 
                         <div class="card-actions mt-8">
-                            <button
-                                class="bg-blue-500 hover:bg-blue-600 text-white font-medium px-20 py-2 rounded-lg">Calculate</button>
+                            <button class="bg-blue-500 hover:bg-blue-600 text-white font-medium px-20 py-2 rounded-lg"
+                                id="btn-rectangle">Calculate</button>
                         </div>
                     </div>
                 </div>
@@ -132,8 +136,30 @@
                 </div>
 
             </div>
-            <div class="text-center mt-12 text-lg lg:text-2xl w-full lg:w-[30%]">
+            <div class="text-center mt-12 text-lg w-full lg:w-[30%] mx-2">
                 <h1 class="underline">Area Calculation</h1>
+                <div class="">
+                    <table class="table w-full">
+                        <!-- head -->
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Result</th>
+                                <th>Convert
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody id="table">
+                            <!-- row 1 -->
+                            <!-- <tr>
+                                <th>1</th>
+                                <td>Cy Ganderton</td>
+                                <td>Quality Control Specialist</td>
+                                <td>Blue</td>
+                            </tr> -->
+                        </tbody>
+                    </table>
+                </div>
             </div>
         </section>
         <section>
